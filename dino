@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-audio" src="resources/audio/background-music.mp3" preload="auto" loop></audio>
+    <div class="audio-controls">
+        <button id="play-pause">Play</button>
+        <button id="mute">Mute</button>
+        <input id="volume-control" type="range" min="0" max="100" value="100">
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Angles by Dino</h1>
+
+    </header>
+    <section id="home">
+        <h2>Featured Work</h2>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="resources/picture/slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="resources/picture/slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="resources/picture/slide3.jpg" alt="Slide 3">
+            </div>
+    
+            <!-- Navigation controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+   
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <!-- Gallery items go here -->
+            <div class="gallery-item">
+                <img src="resources/picture/10.jpg" alt="Dino">                
+            </div>
+            <div class="gallery-item">
+                <img src="resources/picture/9.jpg" alt="Dino">    
+            </div>
+            <div class="gallery-item">
+                <img src="resources/picture/5pic.jpg" alt="Dino">    
+            </div>
+            <div class="gallery-item">
+                <img src="resources/picture/3 pic.jpg" alt="Dino">                
+            </div>
+            
+            <!-- Add more gallery items -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>        
+        <p>As a 30-year-old photographer, I’m excited to capture the unique beauty and vibrant culture of my neighborhood. My goal is to showcase the distinctive character and lively vibe of our community through my lens.</p>
+        <img src="resources/picture/first pic.jpg" alt="Dino">
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>I do wedding, special occastions, headshots and many more.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="send_message.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Angles by Dino. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
